@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="menu">
+        <ul class="sticky-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="first-name" placeholder="First Name" required>
+                <input type="text" id="last-name" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <select id="area-code" name="area-code"></select>
+                <input type="text" id="phone" placeholder="Enter your phone" required>
+            </div>
+            <div class="form-group">
+                <label for="company">Company:</label>
+                <select id="company" name="company" required></select>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required></select>
+            </div>
+            <div class="form-group">
+                <label>Are you a beginner?</label>
+                <input type="radio" id="beginner-yes" name="beginner" value="yes" required> Yes
+                <input type="radio" id="beginner-no" name="beginner" value="no" required> No
+            </div>
+            <button type="submit" class="submit-button">Register</button>
+        </form>
+    </div>
+
+    <div id="left-ad" class="ad">
+        <span class="close-ad" onclick="closeAd('left-ad')">&times;</span>
+        <a href="https://www.hepsiburada.com" target="_blank">
+            <img src="hepsiburada-ad.jpg" alt="Left Ad">
+        </a>
+    </div>
+
+    <div id="right-ad" class="ad">
+        <span class="close-ad" onclick="closeAd('right-ad')">&times;</span>
+        <a href="https://www.hepsiburada.com" target="_blank">
+            <img src="hepsiburada-ad.jpg" alt="Right Ad">
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
